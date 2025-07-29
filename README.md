@@ -1,4 +1,4 @@
-## ESP-IDF DHT11 sensor Driver
+## ESP-IDF Driver for DHT11 sensor
 Developed a custom ESP32 driver for the DHT11 sensor using the ESP IDF framework. Refer to dht11.h and dht11.c for the implementation.
 
 ## ESP-32 DHT11 Web Server
