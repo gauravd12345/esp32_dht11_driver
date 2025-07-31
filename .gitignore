@@ -1,6 +1,8 @@
 # ESP-IDF build output
 build/
+sdkconfig
 sdkconfig.old
+
 *.bin
 *.elf
 *.map
@@ -26,6 +28,3 @@ venv/
 CMakeFiles/
 CMakeCache.txt
 
-dmain.c
-dchat.h
-dchat.c
