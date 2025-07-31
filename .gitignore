@@ -26,6 +26,6 @@ venv/
 CMakeFiles/
 CMakeCache.txt
 
-main.c
+dmain.c
 dchat.h
 dchat.c
