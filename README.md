@@ -2,7 +2,7 @@
 Custom ESP32 driver for the DHT11 sensor using the ESP-IDF framework. 
 ### How to use
 Include dht11.h and dht11.c in your project directory where the ESP-IDF environment has been set up. Make sure to edit the CMakeLists.txt file by adding the file that contains your <b>app_main</b> function.
-For example, to use the dht11_test.c file shown below, edit your CMakeLists.txt file like so ```SRCS "dht11_test.c" "dht11.c" ```. 
+For an example on how to use the DHT11 driver, refer to dht11_test.c show below. To include this file in your project, edit your CMakeLists.txt file like so ```SRCS "dht11_test.c" "dht11.c" ```. 
 ### dht11_test.c
 ```#include <stdio.h>
 #include "freertos/FreeRTOS.h"
