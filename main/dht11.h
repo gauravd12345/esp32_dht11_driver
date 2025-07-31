@@ -1,5 +1,6 @@
 #ifndef DHT11_H
 #define DHT11_H
+#include "driver/gpio.h"
 
 /* 
     DHT11 DATA FORMAT (FROM DATASHEET):
@@ -33,9 +34,14 @@
         An entire communication process is roughly 4ms
 */
 
+typedef struct {
+    gpio_num_t pin;
+    uint8_t temperature;
+    uint8_t humidity;
 
-void dht11_start(int gpio_pin);
+} dht11_data ;
 
-void dht11_read(int gpio_pin, uint8_t* temperature, uint8_t* humidity);
+void dht11_init(dht11_data *dht, gpio_num_t gpio_pin);
+int dht11_read(dht11_data *dht);
 
 #endif
